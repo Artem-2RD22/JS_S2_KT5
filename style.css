@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    position: relative;
+    background-color: #222;
+  }
+
+  .menu {
+    height: 50px;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 30px;
+  }
+  .menu nav {
+    padding: 20px;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    align-self: center;
+  }
+  .menu nav:hover {
+    background-color: aliceblue;
+  }
+
+  .menu a {
+    text-decoration: none;
+    font-size: larger;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+  }
+  
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  .mySlides img{
+    align-self: center;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  
+  .column {
+    width: 100px;
+    height: 100px;
+    /*float: left;
+    width: 16.66%;*/
+  }
+
+  .demo  {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.6;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 8px solid #222;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .cat-card {
+    flex: 0 0 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 40px auto;
+}
+
+.cat-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cat-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.cat-age-rate {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.cat-desc {
+  font-size: 20px;
+}
+
+.favorite-star {
+  color: gold;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
