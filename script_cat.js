@@ -11,7 +11,7 @@ cats.forEach((cat, index) => {
   slideDiv.appendChild(numberText);
   
   let link = document.createElement('a');
-  link.href =`cat.html?cat=${index + 1}`;
+  link.href =`/cat.html?cat=${index + 1}`;
   slideDiv.appendChild(link);
 
   let img = document.createElement('img');
